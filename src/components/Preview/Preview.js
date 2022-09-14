@@ -16,7 +16,7 @@ export default function Preview({ title, subtitle, font }) {
   
 
   return (
-    <div className="preview">
+    <div className={`preview ${font}`}>
       <h1>{title}</h1>
       <h3>{subtitle}</h3>
     </div>
