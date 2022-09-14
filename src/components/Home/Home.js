@@ -11,6 +11,7 @@ export default function Home() {
   const [subtitle, setSubtitle] = useState('Blog Subtitle');
   const [font, setFont] = useState("Architect's Daughter");
   const [align, setAlign] = useState('');
+  const [text, setText] = useState('Add your post content');
   return (
     <main>
       {/* pass the state variables as props to the presentational components */}
@@ -19,6 +20,7 @@ export default function Home() {
         subtitle={subtitle} 
         font={font} 
         align={align}
+        text={text}
       />
       <Editor 
         title={title} 
@@ -29,6 +31,8 @@ export default function Home() {
         setFont={setFont} 
         align={align}
         setAlign={setAlign}
+        text={text}
+        setText={setText}
       />
     </main>
   );
